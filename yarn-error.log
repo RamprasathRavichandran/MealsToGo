@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\viewr\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add reacat-native-theme
+  C:\Program Files\nodejs\node.exe C:\Users\viewr\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @expo-google-fonts/Lato
 
 PATH: 
   C:\Python39\Scripts\;C:\Python39\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-16\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\viewr\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Users\viewr\AppData\Local\Microsoft\WindowsApps;C:\Users\viewr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\viewr\.dotnet\tools;C:\Users\viewr\AppData\Local\Android\Sdk\platform-tools;C:\Users\viewr\AppData\Local\GitHubDesktop\bin;C:\Users\viewr\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\viewr\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/reacat-native-theme: Not found
+  Error: https://registry.yarnpkg.com/@expo-google-fonts%2fLato: Not found
       at Request.params.callback [as _callback] (C:\Users\viewr\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67029:18)
       at Request.self.callback (C:\Users\viewr\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
       at Request.emit (node:events:390:28)
@@ -40,12 +40,15 @@ npm manifest:
       "lint": "eslint . --ext .js"
     },
     "dependencies": {
+      "@expo-google-fonts/oswald": "^0.2.2",
       "expo": "~44.0.0",
+      "expo-font": "~10.0.4",
       "expo-status-bar": "~1.2.0",
       "react": "17.0.1",
       "react-dom": "17.0.1",
       "react-native": "0.64.3",
       "react-native-paper": "^4.11.2",
+      "react-native-theme": "^0.1.8",
       "react-native-web": "0.17.1",
       "styled-components": "^5.3.3"
     },
@@ -1167,6 +1170,11 @@ Lockfile:
       js-yaml "^3.13.1"
       minimatch "^3.0.4"
       strip-json-comments "^3.1.1"
+  
+  "@expo-google-fonts/oswald@^0.2.2":
+    version "0.2.2"
+    resolved "https://registry.yarnpkg.com/@expo-google-fonts/oswald/-/oswald-0.2.2.tgz#bb3dcd41914f593cdb27a0531a6f312f9e5ea8ee"
+    integrity sha512-Gh/U8QeztHSjxHfayhNLqpdTSY6YTcplm0sI04Zia3LUSv66U3TItc1EzUWdSYBTb/BKBm88utUdJdwMtZ9a1Q==
   
   "@expo/config-plugins@4.0.16", "@expo/config-plugins@^4.0.2":
     version "4.0.16"
@@ -5340,6 +5348,11 @@ Lockfile:
       "@callstack/react-theme-provider" "^3.0.7"
       color "^3.1.2"
       react-native-iphone-x-helper "^1.3.1"
+  
+  react-native-theme@^0.1.8:
+    version "0.1.8"
+    resolved "https://registry.yarnpkg.com/react-native-theme/-/react-native-theme-0.1.8.tgz#4cbcf7e2dba9be5c3f9cbf3eace82effb2bf8511"
+    integrity sha1-TLz34tupvlw/nL8+rOgu/7K/hRE=
   
   react-native-web@0.17.1:
     version "0.17.1"
