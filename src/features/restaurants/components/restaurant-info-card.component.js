@@ -1,20 +1,21 @@
 import React from "react";
+import styled from "styled-components/native";
+
 import { SvgXml } from "react-native-svg";
 
-import { Spacer } from "../../../components/spacer/spacer.component";
-import { Text } from "../../../components/typography/text.component";
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";
-
+import { Spacer } from "../../../components/spacer/spacer.component";
+import { Text } from "../../../components/typography/text.component";
 import {
+  Icon,
   RestaurantCard,
   RestaurantCardCover,
+  Address,
   Info,
+  Rating,
   Section,
   SectionEnd,
-  Rating,
-  Icon,
-  Address,
 } from "./restaurant-info-card.styles";
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
@@ -22,7 +23,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     name = "Some Restaurant",
     icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
     photos = [
-      "https://www.foodiesfeed.com/wp-content/uploads/2019/06/top-view-for-box-of-2-burgers-home-made-600x899.jpg",
+      "https://www.foodiesfeed.com/wp-content/uploads/2021/01/homemade-artisan-sourdough-bread.jpg",
     ],
     address = "100 some random street",
     isOpenNow = true,
@@ -45,7 +46,9 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
           </Rating>
           <SectionEnd>
             {isClosedTemporarily && (
-              <Text variant="error">CLOSED TEMPORARILY</Text>
+              <Text variant="label" style={{ color: "red" }}>
+                CLOSED TEMPORARILY
+              </Text>
             )}
             <Spacer position="left" size="large">
               {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
